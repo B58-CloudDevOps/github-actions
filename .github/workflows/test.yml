@@ -95,7 +95,7 @@ jobs:
         run: echo Hello, world!
 
   endtoend-testing:
-    needs: [functional-testing]
+    needs: [qa-deployment]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
