@@ -62,7 +62,7 @@ jobs:
         run: echo Hello, world!
 
   uploading-image:
-    needs: [uploading-image]
+    needs: [build-docker-image]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
